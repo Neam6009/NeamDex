@@ -1,7 +1,8 @@
 import React from 'react'
 import classes from './Experience.module.css'
 import ContainerHeading from './ContainerHeading'
-import ProjectContainer from './projectContainer'
+import ProjectContainer from '../Components/ProjectContainer'
+
 
 let projects_array = [ 
 
