@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from '../Components/Projects.module.css'
 import ContainerHeading from './ContainerHeading'
-import ProjectContainer from './projectContainer'
+import ProjectContainer from './projectContainer.jsx'
 
 
 let projects_array = [ 

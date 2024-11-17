@@ -25,4 +25,4 @@ const ProjectContainer = (project_info) => {
   )
 }
 
-export default ProjectContainer
+export default ProjectContainer;
