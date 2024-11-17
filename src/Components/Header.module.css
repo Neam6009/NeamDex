@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Mirage_Gothic'; 
+    src: url('public/fonts/Mirage final.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'burgendry'; 
+    /* src: url('public/fonts/Burgendry') format('opentype'); */
+    src: url('public/fonts/Burgendry.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.HeroName{
+    font-family: 'burgendry';
+    font-size: 5rem;
+    text-align: center;
+    /* border: 0.2rem solid black ; */
+    margin: 0.5rem  ;
+    border-radius: 0.3rem;
+
+}

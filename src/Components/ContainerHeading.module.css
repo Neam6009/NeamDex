@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'burgendry'; 
+    /* src: url('public/fonts/Burgendry') format('opentype'); */
+    src: url('public/fonts/Burgendry.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  
+
+.Container{
+    font-family: 'burgendry';
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    transform: translate(45rem,8rem);
+    border-radius: 0.5rem;
+    opacity: 0;
+    max-width: 11rem;
+    text-align: center;
+}
+
+.left{
+  animation: left 0.7s ease-in-out 1.2s ;
+    animation-fill-mode: forwards;
+}
+
+.right{
+  animation: projectHeadingIn 0.7s ease-in-out 1.2s ;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes projectHeadingIn {
+  0%{
+    
+    transform: translate(100rem,7rem);
+}
+100%{
+    transform: translate(42rem,7rem);
+    opacity: 1;
+}
+  
+}
+
+@keyframes left{
+  0%{
+    
+    transform: translate(-80rem,8rem);
+}
+100%{
+  transform: translate(3.5rem,8rem);
+    opacity: 1;
+}
+}
+
+
+@media only screen and (max-width:500px) {
+
+  @keyframes projectHeadingIn {
+    0%{
+      
+      transform: translate(38rem,5rem);
+  }
+  100%{
+      transform: translate(20rem,5rem);  
+      opacity: 1;
+  }
+
+  
+    
+  }
+
+  @keyframes left{
+    0%{
+      transform: translate(-38rem,10rem);
+
+  }
+  100%{
+    transform: translate(0rem,10rem);
+      opacity: 1;
+  }
+  }
+
+
+  .Container{
+    transform: translate(18rem,10rem);
+    scale: 0.8;
+
+  }
+ 
+}

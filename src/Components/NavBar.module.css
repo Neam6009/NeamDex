@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@font-face {
+  font-family: 'burgendry';
+  /* src: url('public/fonts/Burgendry') format('opentype'); */
+  src: url('public/fonts/Burgendry.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'project_heading'; 
+  /* src: url('public/fonts/Burgendry') format('opentype'); */
+  src: url('public/fonts/project_heading.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Container {
+  position: fixed;
+  height: 100%;
+  width: 17%;
+  left: 5rem;
+  top: 0.5rem;
+  gap: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  align-items: center;
+  /* background-image: url('../assets/NavBar.png'); */
+  background-image: url('../assets/project_info_card.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-family: 'burgendry';
+  animation: slideFromLeft 0.5s ease-in-out;
+  z-index: 8;
+}
+
+.navItem {
+  font-size: 1.3rem;
+  font-family: 'project_heading';
+  text-align: left;
+}
+
+.items{
+  position: absolute;
+  top: 7rem;
+  left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: left;
+  text-align: left;
+}
+
+.selected{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 5rem;
+  margin-left: 7%;
+  text-align: center;
+  justify-content: center;
+  min-width: 70%;
+  height: 5%;
+  font-family: 'project_heading';
+  background-image: url('../assets/selected_nav.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.text{
+  animation: downTop 1s ease-in ;
+
+}
+
+.menu{
+  width: 5rem;
+  height: 5rem;
+  top: 0rem;
+  left: -3rem;
+  position: fixed;
+  display: none;
+  z-index: 9;
+}
+
+
+.navItem:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+
+@keyframes slideFromLeft {
+  0%{
+      transform: translate(-5rem,0rem);
+      opacity: 0;
+  }
+  100%{
+      /* scale: 1; */
+      opacity: 1;
+  }
+}
+
+@keyframes downTop {
+  0%{
+      transform: translate(0rem,5rem);
+      opacity: 0;
+  }
+  100%{
+      /* scale: 1; */
+      opacity: 1;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .Container{
+    top: 0rem;
+    left: 2rem;
+    height: 100%;
+    width: 80%; 
+    position: fixed;
+  }
+  
+
+  .menu{
+    display: block;
+    width: 2rem;
+    height: 2rem; 
+  top: 0.5rem;
+  left: 0.5rem;
+  position: fixed;
+  }
+}

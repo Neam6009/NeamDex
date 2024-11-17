@@ -1,0 +1,140 @@
+.Container{
+    border: 0.2rem solid black ;
+    margin: 0.5rem ;
+    padding: 1.5rem;
+    padding-bottom:0rem;
+    border-radius: 0.3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.skill{
+  opacity: 0;
+}
+
+.heading{
+  transform: translate(0rem,-2rem);
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-height: 25rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    overflow-y: auto;
+}
+
+@media only screen and (max-width:500px){
+    .skills{
+        padding: 2rem;
+        
+    }
+    .heading{
+      transform: translate(-3rem,0rem);
+    }
+
+}
+
+.left{
+    animation: left 0.7s ease-in-out 1.2s ;
+      animation-fill-mode: forwards;
+  }
+  
+  .right{
+    animation: projectHeadingIn 0.7s ease-in-out 1.2s ;
+      animation-fill-mode: forwards;
+  }
+
+.upDown{
+  animation: upDown 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.downUp{
+  animation: downUp 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+  
+  
+  
+  
+  @keyframes projectHeadingIn {
+    0%{
+      
+      transform: translate(100rem,4rem);
+  }
+  100%{
+      transform: translate(60rem,4rem);
+      opacity: 1;
+  }
+    
+  }
+  
+  @keyframes left{
+    0%{
+      
+      transform: translate(-80rem,8rem);
+  }
+  100%{
+    transform: translate(3.5rem,8rem);
+      opacity: 1;
+  }
+  }
+
+  @keyframes upDown{
+    0%{
+      transform: translate(-10rem,-5rem);
+      opacity: 0;
+    }
+    100%{
+      transform: translate(0rem,0rem);
+      opacity: 1;
+    }
+  }
+
+  @keyframes downUp{
+    0%{
+      transform: translate(10rem,5rem);
+      opacity: 0;
+    }
+    100%{
+      transform: translate(0rem,0rem);
+      opacity: 1;
+    }
+  }
+  
+  
+  @media only screen and (max-width:500px) {
+  
+    @keyframes projectHeadingIn {
+      0%{
+        
+        transform: translate(38rem,5rem);
+    }
+    100%{
+        transform: translate(20rem,5rem);  
+        opacity: 1;
+    }
+  
+    
+      
+    }
+  
+    @keyframes left{
+      0%{
+        transform: translate(-38rem,10rem);
+  
+    }
+    100%{
+      transform: translate(0rem,10rem);
+        opacity: 1;
+    }
+    }
+  
+  
+   
+  }

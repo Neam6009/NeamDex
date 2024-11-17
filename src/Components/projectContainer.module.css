@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'project_heading'; 
+    /* src: url('public/fonts/Burgendry') format('opentype'); */
+    src: url('public/fonts/project_heading.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.project_info_card{
+    background-image: url('../assets/project_info_card.png');
+    background-size:cover;
+    width: 26rem;
+    height: 37rem;
+    scale: 0.8;
+    padding: 5rem 5rem 0 5rem;
+    font-family: 'project_heading';
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+    border-radius: 0.5rem;
+
+}
+
+.projectName{
+    text-align: left;
+    /* font-family: 'project_heading'; */
+    font-size: 2.5rem;
+}
+
+.projectDescription{
+    font-size: 1.2rem;
+}
+
+.techStack{
+    text-align: center;
+    font-size: 2rem ;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width:500px) {
+    .project_info_card{
+    background-image: url('../assets/project_info_card.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 26rem;
+    height: 37rem;
+    scale: 0.8;
+    padding: 5rem;
+    }
+}

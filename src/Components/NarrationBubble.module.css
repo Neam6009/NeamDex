@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Mirage_Gothic'; /* Use any name you like */
+    src: url('public/fonts/Mirage final.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'burgendry'; 
+    /* src: url('public/fonts/Burgendry') format('opentype'); */
+    src: url('public/fonts/Burgendry.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.bubble{
+    padding: 0rem;
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    max-width: 17rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* position: absolute; */
+    /* top:32.2rem; */
+    /* left:34rem; */
+    border: 0.2rem solid black;
+    background-color: white;
+    /* margin-top:5rem ; */
+    transform: translate(1rem,2rem);
+    animation: nin 1.5s ease-in-out 1  ;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.bubble>p{
+    width:6rem;
+    font-family: 'burgendry';
+    font-size: 2rem;
+    
+}
+
+.bubble>span{
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+@media only screen and (max-width:500px) {
+    .bubble{
+        max-width: 10rem;
+        scale: 0.8;
+        transform: translate(-1rem,4rem);
+        padding: 1rem;
+
+    }
+}
+
+@keyframes nin {
+    0%{
+        /* scale: 0; */
+        transform: translate(-100rem,2rem);
+    }
+    100%{
+        /* scale: 1; */
+    }
+}
+
