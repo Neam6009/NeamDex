@@ -19,7 +19,7 @@ const Skill = (s) => {
      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg",                            //11 mysql
      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" ,                             //12 pytorch
      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" ,                       //13 tensorflow
-     "src/assets/omdb.png",                                                                                                 //14 omdb
+     "../assets/omdb.png",                                                                                                 //14 omdb
      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",                                  //15 html
      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",                                    //16 css
      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",                      //17 tailwind
