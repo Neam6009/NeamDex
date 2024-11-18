@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'burgendry'; 
-    /* src: url('public/fonts/Burgendry') format('opentype'); */
+    /* src: url('/fonts/Burgendry') format('opentype'); */
     src: url('public/fonts/Burgendry.otf') format('opentype');
     font-weight: normal;
     font-style: normal;

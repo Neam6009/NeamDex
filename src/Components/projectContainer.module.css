@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'project_heading'; 
     /* src: url('public/fonts/Burgendry') format('opentype'); */
-    src: url('public/fonts/project_heading.ttf') format('truetype');
+    src: url('/fonts/project_heading.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
