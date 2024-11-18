@@ -19,7 +19,7 @@ let projects_array = [
   },
   {name: "Novie",
     description: "A React-based movie browsing platform with real-time search and details on thousands of movies, powered by the OMDB API for an engaging user experience.",
-    techStack : [1,14,16]
+    techStack : [1,16]
   },
   {name: "Drowsiness Detection with GCN",
     description: "A model using Graph Convolutional Networks to classify facial images as drowsy or alert, achieving 70% accuracy with facial landmark analysis.",
